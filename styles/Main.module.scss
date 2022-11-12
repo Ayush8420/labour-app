@@ -1,0 +1,54 @@
+.main{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    padding-inline: clamp(20px,10vw,100px);
+
+    @media screen and (max-width : 850px) {
+       flex-direction: column;
+
+       .imgSection,.content{
+        width: 100% !important;
+       }
+    }
+
+    .imgSection{
+        width: 50%;
+
+        .dummyImg{
+            height: 50vh;
+            width: 100%;
+            background-color: #aaa;
+        }
+    }
+
+    .content{
+        width: 50%;
+         
+        h2{
+            font-size: 2rem;
+            color: #111;
+        }
+
+        p{
+            text-align: justify;
+            color: #444;
+        }
+
+        button{
+            border: 5px solid green;
+            outline: none;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #0000;
+            text-align: center;
+            line-height: 45px;
+            font-size: 1.7rem;
+            color: green;
+        }
+    }
+}
